@@ -1,0 +1,175 @@
+/* Bootstrap theme — Mercato Pratola brand */
+:root {
+  --bs-primary: #c9a227;
+  --bs-primary-rgb: 201, 162, 39;
+  --bs-body-bg: #141210;
+  --bs-body-color: #f4efe6;
+  --bs-border-color: rgba(201, 162, 39, 0.25);
+  --bs-link-color: #e4c45a;
+  --bs-link-hover-color: #c9a227;
+  --bs-border-radius: 4px;
+  --bs-border-radius-lg: 16px;
+}
+
+.btn-primary {
+  --bs-btn-color: #1a1814;
+  --bs-btn-bg: #c9a227;
+  --bs-btn-border-color: #c9a227;
+  --bs-btn-hover-color: #1a1814;
+  --bs-btn-hover-bg: #e4c45a;
+  --bs-btn-hover-border-color: #e4c45a;
+  --bs-btn-active-color: #1a1814;
+  --bs-btn-active-bg: #9a7b1a;
+  --bs-btn-active-border-color: #9a7b1a;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.btn-outline-gold {
+  --bs-btn-color: #c9a227;
+  --bs-btn-border-color: #c9a227;
+  --bs-btn-hover-color: #1a1814;
+  --bs-btn-hover-bg: #c9a227;
+  --bs-btn-hover-border-color: #c9a227;
+  --bs-btn-active-color: #1a1814;
+  --bs-btn-active-bg: #9a7b1a;
+  --bs-btn-active-border-color: #9a7b1a;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+/* Site container max-width */
+.site-container {
+  max-width: var(--max-width);
+}
+
+/* Dark navbar */
+.navbar-mp {
+  --bs-navbar-color: #b8aea0;
+  --bs-navbar-hover-color: #f4efe6;
+  --bs-navbar-active-color: #c9a227;
+  --bs-navbar-toggler-border-color: rgba(201, 162, 39, 0.4);
+  transition:
+    background-color var(--transition-base),
+    box-shadow var(--transition-base),
+    backdrop-filter var(--transition-base);
+}
+
+.navbar-mp.scrolled {
+  background: rgba(20, 18, 16, 0.92) !important;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 1px 0 var(--color-border);
+}
+
+.navbar-mp .nav-link {
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.navbar-mp .nav-link.active {
+  color: var(--bs-navbar-active-color) !important;
+}
+
+/* Dark form controls (contact section) */
+.form-dark .form-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.form-dark .form-control,
+.form-dark .form-select {
+  background-color: var(--color-bg-elevated);
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+
+.form-dark .form-control:focus,
+.form-dark .form-select:focus {
+  background-color: var(--color-bg-elevated);
+  border-color: var(--color-accent);
+  color: var(--color-text);
+  box-shadow: 0 0 0 0.2rem rgba(201, 162, 39, 0.15);
+}
+
+.form-dark .form-control::placeholder {
+  color: var(--color-text-muted);
+  opacity: 0.6;
+}
+
+/* Light sections — reset Bootstrap colors (cards were inheriting dark body theme) */
+.section--light {
+  --bs-body-color: #1a1814;
+  --bs-body-color-rgb: 26, 24, 20;
+  --bs-secondary-color: #5c5348;
+  --bs-secondary-color-rgb: 92, 83, 72;
+  --bs-tertiary-color: #7a7068;
+  --bs-emphasis-color: #1a1814;
+  --bs-card-bg: #ffffff;
+  --bs-card-color: #1a1814;
+  --bs-card-border-color: rgba(26, 24, 20, 0.08);
+  color: var(--color-text-dark);
+}
+
+.section--light .card {
+  background-color: #fff;
+  color: var(--color-text-dark);
+}
+
+.section--light .card-title {
+  color: var(--color-text-dark);
+}
+
+/* Compact navbar CTA */
+.navbar-mp .btn-nav-cta {
+  --bs-btn-padding-y: 0.35rem;
+  --bs-btn-padding-x: 0.9rem;
+  --bs-btn-font-size: 0.75rem;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+@media (min-width: 992px) {
+  .navbar-mp .btn-nav-cta {
+    width: auto;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar-mp .btn-nav-cta {
+    width: 100%;
+  }
+}
+
+/* Readable muted text on dark backgrounds (contact, footer) */
+.text-muted-on-dark {
+  color: var(--color-text-muted) !important;
+}
+
+/* Menu cards on light section */
+.menu-card {
+  background-color: #fff !important;
+  color: var(--color-text-dark) !important;
+  border-color: rgba(26, 24, 20, 0.08);
+  box-shadow: 0 4px 24px rgba(26, 24, 20, 0.06);
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.menu-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(26, 24, 20, 0.1);
+}
+
+.text-muted-custom {
+  color: #5c5348 !important;
+}

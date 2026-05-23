@@ -1,0 +1,203 @@
+.gallery {
+  padding: var(--space-2xl) 0;
+  background: var(--color-bg-elevated);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+.label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-sm);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+}
+
+.subtitle {
+  max-width: 32rem;
+  margin: 0 auto;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+}
+
+.carousel {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-soft);
+  aspect-ratio: 16 / 10;
+  max-height: min(70vh, 560px);
+  margin: 0 auto;
+}
+
+.track {
+  display: flex;
+  height: 100%;
+  transition: transform var(--transition-base);
+}
+
+.slide {
+  flex: 0 0 100%;
+  min-width: 100%;
+  height: 100%;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  user-select: none;
+}
+
+/* Scoped under .carousel to override global button reset (border/background: none) */
+.carousel .arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  width: 2.75rem;
+  height: 2.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid rgba(201, 162, 39, 0.55);
+  border-radius: 50%;
+  background: rgba(20, 18, 16, 0.88);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+  color: var(--color-accent-light);
+  font-size: 0;
+  line-height: 0;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition:
+    background-color var(--transition-fast),
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.carousel .arrow::before {
+  content: "";
+  display: block;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+}
+
+.carousel .arrow:hover {
+  background: rgba(201, 162, 39, 0.35);
+  border-color: var(--color-accent);
+  box-shadow: 0 4px 20px rgba(201, 162, 39, 0.25);
+}
+
+.carousel .arrowPrev {
+  left: var(--space-sm);
+}
+
+.carousel .arrowPrev::before {
+  transform: rotate(-135deg);
+  margin-left: 0.15rem;
+}
+
+.carousel .arrowNext {
+  right: var(--space-sm);
+}
+
+.carousel .arrowNext::before {
+  transform: rotate(45deg);
+  margin-right: 0.15rem;
+}
+
+.carousel .dots {
+  position: absolute;
+  bottom: var(--space-md);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 2rem;
+  background: rgba(20, 18, 16, 0.75);
+  backdrop-filter: blur(6px);
+}
+
+.carousel .dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.75) !important;
+  cursor: pointer;
+  transition:
+    transform var(--transition-fast),
+    background-color var(--transition-fast);
+}
+
+.carousel .dot:hover {
+  background: rgba(244, 239, 230, 0.65);
+}
+
+.carousel .dotActive {
+  background: var(--color-accent) !important;
+  transform: scale(1.25);
+}
+
+.counter {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  z-index: 3;
+  margin: 0;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--color-text);
+  background: rgba(20, 18, 16, 0.75);
+  border-radius: var(--radius-sm);
+  backdrop-filter: blur(6px);
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    padding: var(--space-xl) 0;
+  }
+
+  .carousel {
+    aspect-ratio: 4 / 3;
+    max-height: none;
+    border-radius: var(--radius-md);
+  }
+
+  .carousel .arrow {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .carousel .dots {
+    bottom: var(--space-sm);
+    gap: 0.35rem;
+    max-width: calc(100% - 5.5rem);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

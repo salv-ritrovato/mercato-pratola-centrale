@@ -1,0 +1,102 @@
+.contact {
+  background:
+    radial-gradient(ellipse 60% 50% at 0% 100%, rgba(45, 74, 62, 0.12), transparent),
+    var(--color-bg);
+}
+
+.infoBlock {
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.infoTitle {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  margin-bottom: var(--space-sm);
+}
+
+.address {
+  font-style: normal;
+  line-height: 1.8;
+  color: var(--color-text-muted);
+}
+
+.info a {
+  color: var(--color-text);
+  transition: color var(--transition-fast);
+}
+
+.info a:hover {
+  color: var(--color-accent-light);
+}
+
+.hours {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.hoursRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--space-md);
+  font-size: 0.9rem;
+}
+
+.hoursRow dt {
+  font-weight: 600;
+  color: var(--color-text);
+  min-width: 5.5rem;
+}
+
+.hoursRow dd {
+  margin: 0;
+  color: var(--color-text-muted);
+  text-align: right;
+}
+
+@media (max-width: 480px) {
+  .hoursRow {
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .hoursRow dd {
+    text-align: left;
+  }
+}
+
+.formWrapper {
+  padding: var(--space-lg);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+}
+
+.formTitle {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.formSubtitle {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.mapWrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+}
+
+.mapWrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}

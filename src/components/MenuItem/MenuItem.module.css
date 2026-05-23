@@ -1,0 +1,26 @@
+.item:last-child {
+  border-bottom: none !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--color-text-dark);
+}
+
+.price {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--color-accent-dark);
+  white-space: nowrap;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #5c5348;
+  line-height: 1.5;
+}
