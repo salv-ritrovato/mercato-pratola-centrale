@@ -43,7 +43,7 @@ export default function Hero() {
             <p className={styles.eyebrow}>Ristorante e Lounge Bar · Pratola Peligna</p>
 
             <p className={styles.tagline}>
-              La cucina italiana incontra l&apos;eleganza del lounge
+              La tradizione d&apos;Abruzzo e l&apos;eleganza del lounge
             </p>
 
             <p className={styles.intro}>

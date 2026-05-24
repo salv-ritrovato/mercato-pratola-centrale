@@ -52,7 +52,7 @@ export const menuCategories = [
         price: "15",
       },
       {
-        name: "Burrata del parco e alici di cetara",
+        name: "Burrata del parco e alici di Cetara",
         description: "Burrata fresca con alici di Cetara, insalatina, olio EVO e basilico fresco",
         price: "10",
       },

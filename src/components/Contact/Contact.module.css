@@ -110,7 +110,27 @@
     justify-content: center;
   }
 
+  .hoursRow {
+    justify-content: center;
+  }
+  .hoursRow dt {
+    min-width: auto;
+    text-align: center;
+  }
+  .hoursRow dd {
+    text-align: center;
+  }
+
   .info a {
     display: inline-block;
+  }
+}
+
+@media (max-width: 480px) {
+  .hoursRow {
+    align-items: center;
+  }
+  .hoursRow dd {
+    text-align: center;
   }
 }
