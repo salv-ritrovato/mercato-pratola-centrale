@@ -100,3 +100,17 @@
   border: 0;
   display: block;
 }
+
+@media (max-width: 991.98px) {
+  .infoBlock {
+    text-align: center;
+  }
+
+  .hoursRow {
+    justify-content: center;
+  }
+
+  .info a {
+    display: inline-block;
+  }
+}

@@ -33,3 +33,15 @@
 .copy {
   color: var(--color-text-muted);
 }
+
+.socialLink {
+  color: var(--color-text-muted);
+  transition: color var(--transition-fast), transform var(--transition-fast);
+  display: flex;
+  align-items: center;
+}
+
+.socialLink:hover {
+  color: var(--color-accent);
+  transform: translateY(-2px);
+}

@@ -14,11 +14,6 @@ const EXPERIENCE = [
     title: "Lounge Bar",
     text: "Aperitivi al tramonto, mixology creativa e una selezione di vini e distillati premium.",
   },
-  {
-    icon: "⭐",
-    title: "Serate Evento",
-    text: "Musica dal vivo, degustazioni e serate a tema nel nostro spazio lounge.",
-  },
 ];
 
 /**
@@ -37,7 +32,7 @@ export default function Menu() {
 
         <div className="row g-4 mb-5">
           {EXPERIENCE.map((item) => (
-            <div className="col-md-4" key={item.title}>
+            <div className="col-md-6" key={item.title}>
               <div className={`card menu-card h-100 text-center border-0 ${styles.experienceCard}`}>
                 <div className="card-body">
                   <span className={styles.experienceIcon} aria-hidden="true">
@@ -53,7 +48,7 @@ export default function Menu() {
 
         <div className="row g-4">
           {menuCategories.map((category) => (
-            <div className="col-lg-4 col-md-6" key={category.id}>
+            <div className="col-lg-6 col-md-6" key={category.id}>
               <div className={`card menu-card h-100 ${styles.category}`}>
                 <div className="card-body">
                   <header className={styles.categoryHeader}>
@@ -70,7 +65,7 @@ export default function Menu() {
         </div>
 
         <p className={`${styles.note} text-center mt-5 mb-0`}>
-          Menu stagionale — disponibilità e prezzi soggetti a variazione.
+          Il menu può variare in base alla stagione — disponibilità e prezzi soggetti a variazione.
           Segnalate eventuali allergie al nostro staff.
         </p>
       </div>

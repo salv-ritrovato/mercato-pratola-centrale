@@ -43,7 +43,7 @@ export default function Hero() {
             <p className={styles.eyebrow}>Ristorante e Lounge Bar · Pratola Peligna</p>
 
             <p className={styles.tagline}>
-              Dove la cucina italiana incontra l&apos;eleganza del lounge
+              La cucina italiana incontra l&apos;eleganza del lounge
             </p>
 
             <p className={styles.intro}>
