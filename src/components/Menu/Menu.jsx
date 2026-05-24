@@ -12,7 +12,7 @@ const EXPERIENCE = [
   {
     icon: "🍸",
     title: "Lounge Bar",
-    text: "Aperitivi al tramonto, mixology creativa e una selezione di vini e distillati premium.",
+    text: "Una cantina con oltre 200 etichette selezionate, mixology creativa e distillati premium per il tuo aperitivo.",
   },
 ];
 
