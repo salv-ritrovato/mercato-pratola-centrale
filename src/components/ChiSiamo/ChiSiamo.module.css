@@ -1,0 +1,79 @@
+.chiSiamo {
+  position: relative;
+}
+
+.chiSiamo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    var(--color-terracotta),
+    var(--color-accent),
+    var(--color-forest)
+  );
+}
+
+/* ── Story copy ── */
+.contentRow {
+  margin-top: var(--space-lg);
+}
+
+.storyCopy {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #5c5348;
+  margin-bottom: var(--space-md);
+}
+
+.storyCopy:last-child {
+  margin-bottom: 0;
+}
+
+/* ── Value pillars ── */
+.valori {
+  padding-left: var(--space-sm);
+}
+
+.valoreItem {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  background-color: rgba(201, 162, 39, 0.06);
+  border: 1px solid rgba(201, 162, 39, 0.18);
+  transition: border-color var(--transition-fast),
+    background-color var(--transition-fast);
+}
+
+.valoreItem:hover {
+  background-color: rgba(201, 162, 39, 0.1);
+  border-color: rgba(201, 162, 39, 0.35);
+}
+
+.valoreIcon {
+  flex-shrink: 0;
+  margin-top: 2px;
+  font-size: 0.9rem;
+  color: var(--color-accent-dark);
+}
+
+.valoreTitle {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  margin-bottom: var(--space-xs);
+}
+
+.valoreDesc {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #5c5348;
+  margin-bottom: 0;
+}

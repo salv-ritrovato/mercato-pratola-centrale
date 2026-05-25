@@ -4,6 +4,7 @@ import styles from "./Navbar.module.css";
 
 const NAV_LINKS = [
   { id: "home", label: "Home" },
+  { id: "chi-siamo", label: "Chi Siamo" },
   { id: "menu", label: "Menu" },
   { id: "contact", label: "Contatti" },
 ];
