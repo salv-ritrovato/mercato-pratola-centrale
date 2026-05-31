@@ -24,16 +24,16 @@ const VALORI = [
 
 /**
  * ChiSiamo — brand story section with three value pillars.
- * Light background to visually break the dark-themed page flow.
+ * Warm stone background — distinct from Gallery (dark) and Menu (cream).
  */
 export default function ChiSiamo() {
   return (
-    <section id="chi-siamo" className={`section section--light ${styles.chiSiamo}`}>
+    <section id="chi-siamo" className={`section ${styles.chiSiamo}`}>
       <div className="container site-container">
         <SectionHeading
           label="La nostra storia"
           title="Chi Siamo"
-          subtitle=" Mercato Pratola Centrale nasce da un Progetto ambizioso e rivoluzionario: siamo un ristorante e lounge bar a Pratola Peligna, nati dalla passione per la cucina autentica e dall'amore per la nostra terra. Un luogo dove la tradizione si incontra con la modernità."
+          subtitle=" Mercato Pratola Centrale nasce da un progetto ambizioso e rivoluzionario: siamo un ristorante e lounge bar a Pratola Peligna (AQ), nati dalla passione per la cucina autentica e dall'amore per la nostra terra. Un luogo dove la tradizione si incontra con la modernità."
           light
         />
 
@@ -41,19 +41,10 @@ export default function ChiSiamo() {
           {/* Story copy */}
           <div className="col-lg-6">
             <p className={styles.storyCopy}>
-              Il Mercato Pratola Centrale nasce da un sogno semplice: portare
-              sulla tavola i sapori veri dell'Abruzzo, quelli che raccontano la
-              montagna, i pascoli e le tradizioni di generazioni. Con oltre
-              trent'anni di esperienza nel settore della ristorazione, abbiamo
-              aperto le nostre porte per offrire un'esperienza gastronomica
-              completa — dalla colazione al pranzo, dall'aperitivo alla cena.
+             L’Azienda, nella sua dimensione ideale e fisica, nasce da una profonda passione per il nostro territorio — la Valle Peligna, nel cuore dell’Abruzzo interno — e da una precedente esperienza trentennale nel campo della ristorazione. Da questo legame profondo prende vita uno spazio accogliente, pensato per offrire un’esperienza gastronomica completa in ogni momento della giornata: dalla colazione al pranzo, dall’aperitivo alla cena.
             </p>
             <p className={styles.storyCopy}>
-              La nostra proposta spazia dalla cucina tradizionale abruzzese alla
-              pizzeria moderna, passando per un lounge bar curato e una selezione
-              di prodotti tipici del territorio. Tutto questo in un ambiente
-              contemporaneo, a due passi dal casello autostradale, facilmente
-              raggiungibile da tutta la regione.
+Dall'amore per la nostra terra e per i suoi sapori autentici nasce una proposta gastronomica unica, capace di far dialogare la tradizione abruzzese rivisitata in chiave d'eccellenza con la pizzeria moderna e un lounge bar curato. Vogliamo trasmettere questa grande passione a chiunque ci scelga, accogliendo gli ospiti in uno spazio del tutto innovativo e contemporaneo: un punto d'incontro strategico e facile da raggiungere da ogni angolo della regione.
             </p>
           </div>
 

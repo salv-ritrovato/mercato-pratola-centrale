@@ -1,5 +1,11 @@
 .chiSiamo {
   position: relative;
+  background:
+    radial-gradient(ellipse 55% 50% at 0% 100%, rgba(166, 93, 74, 0.14), transparent),
+    radial-gradient(ellipse 45% 40% at 100% 0%, rgba(45, 74, 62, 0.1), transparent),
+    var(--color-surface-warm);
+  color: var(--color-text-dark);
+  border-top: 1px solid rgba(26, 24, 20, 0.1);
 }
 
 .chiSiamo::before {
@@ -45,14 +51,14 @@
   gap: var(--space-md);
   padding: var(--space-md);
   border-radius: var(--radius-md);
-  background-color: rgba(201, 162, 39, 0.06);
-  border: 1px solid rgba(201, 162, 39, 0.18);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(26, 24, 20, 0.1);
   transition: border-color var(--transition-fast),
     background-color var(--transition-fast);
 }
 
 .valoreItem:hover {
-  background-color: rgba(201, 162, 39, 0.1);
+  background-color: rgba(255, 255, 255, 0.72);
   border-color: rgba(201, 162, 39, 0.35);
 }
 
